@@ -7,7 +7,7 @@ app = 'flyio-surrealdb'
 primary_region = 'nrt'
 
 [processes]
-app = "start --user admin --pass ${SURREAL_PASS} surrealdb:/mydata/mydatabase.db"
+app = "start --user admin surrealdb:/mydata/mydatabase.db"
 
 [mounts]
 source = "surreal_data"
