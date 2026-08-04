@@ -7,7 +7,7 @@ app = 'flyio-surrealdb'
 primary_region = 'nrt'
 
 [processes]
-app = "start surrealdb:/mydata/mydatabase.db"
+app = "start --bind 0.0.0.0:8000 surrealdb:/mydata/mydatabase.db"
 
 [mounts]
 source = "surreal_data"
